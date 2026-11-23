@@ -23,3 +23,14 @@ python
 Thumbs.db
 .vscode/
 .idea/
+
+# Private validation and research materials
+validation_human_check.csv
+validation_human_check_ids.txt
+validation_sample.csv
+validation_key.csv
+validation_key_summary.json
+validation_snippets.json
+validation_sample_ai_filled.csv
+validation_sample_backup.csv
+validation_snippets_failed.log
