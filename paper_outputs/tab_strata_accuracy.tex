@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Accuracy by overlap stratum (bootstrap 95\% CI). Stratum `all' = evaluated items with an overlap value for the model's corpus (see the coverage table). Accuracy, raw$-$perturbed sensitivity and the accuracy regression: pythia-410m@fp32 only; pythia-1b@fp32, OLMo-1B-0724-hf@fp32: likelihood scores only. }
+\label{tab:strata_accuracy}
+\begin{tabular}{lllrrrr}
+\toprule
+Benchmark & Model & Stratum & $n$ & Acc. & CI low & CI high \\
+\midrule
+gsm8k & pythia-410m@fp32 & clean & 999 & 0.021 & 0.013 & 0.030 \\
+gsm8k & pythia-410m@fp32 & partial & 1 & 0.000 & -- & -- \\
+gsm8k & pythia-410m@fp32 & all & 1000 & 0.021 & 0.013 & 0.030 \\
+\midrule
+humaneval & pythia-410m@fp32 & clean & 164 & 0.012 & 0.000 & 0.030 \\
+humaneval & pythia-410m@fp32 & all & 164 & 0.012 & 0.000 & 0.030 \\
+\midrule
+mmlu & pythia-410m@fp32 & clean & 693 & 0.264 & 0.231 & 0.299 \\
+mmlu & pythia-410m@fp32 & partial & 31 & 0.226 & 0.097 & 0.387 \\
+mmlu & pythia-410m@fp32 & contaminated & 111 & 0.279 & 0.198 & 0.361 \\
+mmlu & pythia-410m@fp32 & all & 835 & 0.265 & 0.232 & 0.295 \\
+\bottomrule
+\end{tabular}
+\end{table}

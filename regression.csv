@@ -1,0 +1,4 @@
+model,benchmark,n,skipped_reason,odds_ratio_contaminated,or_ci_lo,or_ci_hi,p,converged,n_contaminated,n_clean,fisher_or,fisher_ci_lo,fisher_ci_hi,fisher_p,p_holm,p_bh,controls
+EleutherAI/pythia-410m@fp32,gsm8k,1000,one stratum only: no contaminated items (overlap >= thr),,,,,False,0,999,,,,,,,contaminated + log_len
+EleutherAI/pythia-410m@fp32,humaneval,164,one stratum only: no contaminated items (overlap >= thr),,,,,False,0,164,,,,,,,contaminated + log_len
+EleutherAI/pythia-410m@fp32,mmlu,835,,1.0856077591134867,0.693814654781079,1.6986441530545002,0.7191430612999326,True,111,693,1.0798134265422126,0.6658952561282326,1.717450127418065,0.7296333317192474,0.7191430612999326,0.7191430612999326,contaminated + log_len

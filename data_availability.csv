@@ -1,0 +1,5 @@
+model,role,corpus,accuracy,sensitivity_raw_minus_perturbed,likelihood,reference_control_accuracy,reference_control_likelihood
+EleutherAI/pythia-1b@fp32,primary,pile,no,no,yes,n/a (no accuracy),yes
+EleutherAI/pythia-410m@fp32,primary,pile,yes,yes,yes,no: reference model has no results.csv rows,yes
+Qwen/Qwen2.5-1.5B@fp32,reference,,no,no,yes,n/a (reference),n/a (reference)
+allenai/OLMo-1B-0724-hf@fp32,primary,dolma,no,no,yes,n/a (no accuracy),yes

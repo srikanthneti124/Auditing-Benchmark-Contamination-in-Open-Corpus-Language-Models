@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Outcome each model supports. Accuracy is near chance when its 95\% CI upper bound is $\le$ chance + 0.05; contamination can then only be assessed through likelihood. `n/a' = no accuracy data for this model. Accuracy, raw$-$perturbed sensitivity and the accuracy regression: pythia-410m@fp32 only; pythia-1b@fp32, OLMo-1B-0724-hf@fp32: likelihood scores only. }
+\label{tab:outcomes}
+\begin{tabular}{llrrrllll}
+\toprule
+Benchmark & Model & Acc. & CI high & Chance & Near chance & Log-lik. data & Log-lik. estimable & Primary outcome \\
+\midrule
+gsm8k & pythia-1b@fp32 & -- & -- & 0.000 & n/a (no accuracy) & yes & no & likelihood only (no accuracy data); contrast not estimable \\
+gsm8k & pythia-410m@fp32 & 0.021 & 0.030 & 0.000 & yes & yes & no & likelihood; contamination contrast not estimable \\
+gsm8k & OLMo-1B-0724-hf@fp32 & -- & -- & 0.000 & n/a (no accuracy) & yes & yes & likelihood only (no accuracy data) \\
+\midrule
+humaneval & pythia-1b@fp32 & -- & -- & 0.000 & n/a (no accuracy) & yes & no & likelihood only (no accuracy data); contrast not estimable \\
+humaneval & pythia-410m@fp32 & 0.012 & 0.030 & 0.000 & yes & yes & no & likelihood; contamination contrast not estimable \\
+humaneval & OLMo-1B-0724-hf@fp32 & -- & -- & 0.000 & n/a (no accuracy) & yes & yes & likelihood only (no accuracy data) \\
+\midrule
+mmlu & pythia-1b@fp32 & -- & -- & 0.250 & n/a (no accuracy) & yes & yes & likelihood only (no accuracy data) \\
+mmlu & pythia-410m@fp32 & 0.265 & 0.295 & 0.250 & yes & yes & yes & likelihood (Min-K\%, log-lik.) \\
+mmlu & OLMo-1B-0724-hf@fp32 & -- & -- & 0.250 & n/a (no accuracy) & yes & yes & likelihood only (no accuracy data) \\
+\bottomrule
+\end{tabular}
+\end{table}

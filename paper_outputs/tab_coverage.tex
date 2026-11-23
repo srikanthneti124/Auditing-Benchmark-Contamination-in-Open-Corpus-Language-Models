@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Coverage: items per benchmark at each stage (sampled, with overlap computed per corpus, evaluated, perturbable, scored for likelihood). Item counts are pooled over models; the model columns give how many models each count comes from (likelihood: reference model included). Accuracy, raw$-$perturbed sensitivity and the accuracy regression: pythia-410m@fp32 only; pythia-1b@fp32, OLMo-1B-0724-hf@fp32: likelihood scores only. }
+\label{tab:coverage}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Benchmark & Sampled & Overlap (dolma) & Overlap (pile) & Evaluated & Perturbable & Log-lik. scored & Models (acc.) & Models (log-lik.) \\
+\midrule
+gsm8k & 1000 & 1000 & 1000 & 1000 & 343 & 1000 & 1 & 4 \\
+\midrule
+humaneval & 164 & 164 & 164 & 164 & 162 & 164 & 1 & 4 \\
+\midrule
+mmlu & 1000 & 835 & 835 & 1000 & 928 & 1000 & 1 & 4 \\
+\bottomrule
+\end{tabular}
+\end{table}

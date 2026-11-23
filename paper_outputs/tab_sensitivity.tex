@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Contamination sensitivity: raw minus perturbed accuracy (bootstrap 95\% CI). Accuracy, raw$-$perturbed sensitivity and the accuracy regression: pythia-410m@fp32 only; pythia-1b@fp32, OLMo-1B-0724-hf@fp32: likelihood scores only. }
+\label{tab:sensitivity}
+\begin{tabular}{lllrrrrrr}
+\toprule
+Benchmark & Model & Stratum & $n$ & Raw & Perturbed & Sensitivity & CI low & CI high \\
+\midrule
+gsm8k & pythia-410m@fp32 & clean & 343 & 0.012 & 0.006 & 0.006 & -0.009 & 0.020 \\
+\midrule
+humaneval & pythia-410m@fp32 & clean & 162 & 0.012 & 0.012 & 0.000 & 0.000 & 0.000 \\
+\midrule
+mmlu & pythia-410m@fp32 & clean & 654 & 0.271 & 0.245 & 0.026 & -0.021 & 0.075 \\
+mmlu & pythia-410m@fp32 & partial & 30 & 0.200 & 0.433 & -0.233 & -0.467 & 0.033 \\
+mmlu & pythia-410m@fp32 & contaminated & 103 & 0.262 & 0.243 & 0.019 & -0.097 & 0.146 \\
+\bottomrule
+\end{tabular}
+\end{table}

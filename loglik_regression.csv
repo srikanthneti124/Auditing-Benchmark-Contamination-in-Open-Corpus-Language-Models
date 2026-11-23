@@ -1,0 +1,37 @@
+model,benchmark,score,n,controls,error,coef_contaminated,ci_lo,ci_hi,p,higher_in_contaminated_p05,p_holm,p_bh
+EleutherAI/pythia-1b@fp32,gsm8k,ll_question,1000,contaminated + log_len + ref_ll_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,gsm8k,ll_question_answer,1000,contaminated + log_len + ref_ll_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,gsm8k,mink_question,1000,contaminated + log_len + ref_mink_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,gsm8k,mink_question_answer,1000,contaminated + log_len + ref_mink_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,humaneval,ll_question,164,contaminated + log_len + ref_ll_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,humaneval,ll_question_answer,164,contaminated + log_len + ref_ll_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,humaneval,mink_question,164,contaminated + log_len + ref_mink_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,humaneval,mink_question_answer,164,contaminated + log_len + ref_mink_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-1b@fp32,mmlu,ll_question,835,contaminated + log_len + ref_ll_question,,0.056635214953922555,-0.022751173238770503,0.1360216031466156,0.16203436056053566,False,1.0,0.7981818343484465
+EleutherAI/pythia-1b@fp32,mmlu,ll_question_answer,835,contaminated + log_len + ref_ll_question_answer,,0.04404206554206682,-0.02912419964120707,0.1172083307253407,0.23808356145233445,False,1.0,0.7981818343484465
+EleutherAI/pythia-1b@fp32,mmlu,mink_question,835,contaminated + log_len + ref_mink_question,,0.10625992998438274,-0.035184311165878945,0.24770417113464444,0.14090691137159694,False,1.0,0.7981818343484465
+EleutherAI/pythia-1b@fp32,mmlu,mink_question_answer,835,contaminated + log_len + ref_mink_question_answer,,0.048584201866612824,-0.08778231032064832,0.18495071405387398,0.48499624572373945,False,1.0,0.8083270762062325
+EleutherAI/pythia-410m@fp32,gsm8k,ll_question,1000,contaminated + log_len + ref_ll_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,gsm8k,ll_question_answer,1000,contaminated + log_len + ref_ll_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,gsm8k,mink_question,1000,contaminated + log_len + ref_mink_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,gsm8k,mink_question_answer,1000,contaminated + log_len + ref_mink_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,humaneval,ll_question,164,contaminated + log_len + ref_ll_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,humaneval,ll_question_answer,164,contaminated + log_len + ref_ll_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,humaneval,mink_question,164,contaminated + log_len + ref_mink_question,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,humaneval,mink_question_answer,164,contaminated + log_len + ref_mink_question_answer,contaminated stratum empty or too few rows,,,,,,,
+EleutherAI/pythia-410m@fp32,mmlu,ll_question,835,contaminated + log_len + ref_ll_question,,0.016503033883856946,-0.07007683564161088,0.10308290340932477,0.7087095589416955,False,1.0,0.8858869486771194
+EleutherAI/pythia-410m@fp32,mmlu,ll_question_answer,835,contaminated + log_len + ref_ll_question_answer,,0.020815681348725943,-0.05923708060277984,0.10086844330023172,0.610304604055223,False,1.0,0.8718637200788901
+EleutherAI/pythia-410m@fp32,mmlu,mink_question,835,contaminated + log_len + ref_mink_question,,0.07616145231139995,-0.07737977307813904,0.22970267770093894,0.33094806662124976,False,1.0,0.7981818343484465
+EleutherAI/pythia-410m@fp32,mmlu,mink_question_answer,835,contaminated + log_len + ref_mink_question_answer,,0.01970520372360622,-0.1309665169005883,0.17037692434780077,0.7976970208800268,False,1.0,0.8997786203173159
+allenai/OLMo-1B-0724-hf@fp32,gsm8k,ll_question,1000,contaminated + log_len + ref_ll_question,,0.024249423026156014,-0.05742215336418023,0.10592099941649226,0.560606777721557,False,1.0,0.8624719657254722
+allenai/OLMo-1B-0724-hf@fp32,gsm8k,ll_question_answer,1000,contaminated + log_len + ref_ll_question_answer,,0.00427397844846655,-0.05584114423919331,0.06438910113612642,0.889176190361745,False,1.0,0.9359749372228895
+allenai/OLMo-1B-0724-hf@fp32,gsm8k,mink_question,1000,contaminated + log_len + ref_mink_question,,0.005969565832805279,-0.1774233346683339,0.18936246633394446,0.9491309241638041,False,1.0,0.9491309241638041
+allenai/OLMo-1B-0724-hf@fp32,gsm8k,mink_question_answer,1000,contaminated + log_len + ref_mink_question_answer,,-0.018823022213527926,-0.17210528251459,0.13445923808753418,0.8098007582855844,False,1.0,0.8997786203173159
+allenai/OLMo-1B-0724-hf@fp32,humaneval,ll_question,164,contaminated + log_len + ref_ll_question,,0.04685264926880711,-0.0694463294187453,0.1631516279563595,0.42976225428711434,False,1.0,0.7981818343484465
+allenai/OLMo-1B-0724-hf@fp32,humaneval,ll_question_answer,164,contaminated + log_len + ref_ll_question_answer,,0.045647134033096004,-0.050276095376780155,0.14157036344297216,0.35097950107777287,False,1.0,0.7981818343484465
+allenai/OLMo-1B-0724-hf@fp32,humaneval,mink_question,164,contaminated + log_len + ref_mink_question,,0.11597755078913163,-0.17775139161570364,0.4097064931939669,0.4390000088916456,False,1.0,0.7981818343484465
+allenai/OLMo-1B-0724-hf@fp32,humaneval,mink_question_answer,164,contaminated + log_len + ref_mink_question_answer,,0.13843008048239502,-0.12978791932840505,0.4066480802931951,0.3117495989892012,False,1.0,0.7981818343484465
+allenai/OLMo-1B-0724-hf@fp32,mmlu,ll_question,835,contaminated + log_len + ref_ll_question,,0.05585310905346394,0.004381778919389567,0.10732443918753831,0.03343531994409132,True,0.635271078937735,0.33435319944091313
+allenai/OLMo-1B-0724-hf@fp32,mmlu,ll_question_answer,835,contaminated + log_len + ref_ll_question_answer,,0.07261885664672306,0.022343491244877757,0.12289422204856837,0.004640045823705543,True,0.09280091647411086,0.09280091647411084
+allenai/OLMo-1B-0724-hf@fp32,mmlu,mink_question,835,contaminated + log_len + ref_mink_question,,0.023018497148403344,-0.09106176824770022,0.13709876254450692,0.69249539242335,False,1.0,0.8858869486771194
+allenai/OLMo-1B-0724-hf@fp32,mmlu,mink_question_answer,835,contaminated + log_len + ref_mink_question_answer,,0.04642306131370223,-0.06127746008369232,0.15412358271109677,0.3982114823660956,False,1.0,0.7981818343484465

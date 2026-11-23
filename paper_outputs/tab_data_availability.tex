@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Data available per model, and whether the reference-model control is available for its accuracy and likelihood regressions.}
+\label{tab:data_availability}
+\begin{tabular}{llllllll}
+\toprule
+Model & Role & Corpus & Accuracy & Raw$-$perturbed & Log-lik. & Ref. control (acc.) & Ref. control (log-lik.) \\
+\midrule
+pythia-1b@fp32 & primary & pile & no & no & yes & n/a (no accuracy) & yes \\
+pythia-410m@fp32 & primary & pile & yes & yes & yes & no: reference model has no results.csv rows & yes \\
+Qwen2.5-1.5B@fp32 & reference & -- & no & no & yes & n/a (reference) & n/a (reference) \\
+OLMo-1B-0724-hf@fp32 & primary & dolma & no & no & yes & n/a (no accuracy) & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

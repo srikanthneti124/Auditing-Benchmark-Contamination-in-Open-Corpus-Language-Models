@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Raw (all items with an overlap value) vs contamination-adjusted (clean-subset) accuracy. Accuracy, raw$-$perturbed sensitivity and the accuracy regression: pythia-410m@fp32 only; pythia-1b@fp32, OLMo-1B-0724-hf@fp32: likelihood scores only. }
+\label{tab:adjusted}
+\begin{tabular}{llrrr}
+\toprule
+Benchmark & Model & Raw acc. & Adjusted acc. & Inflation \\
+\midrule
+gsm8k & pythia-410m@fp32 & 0.021 & 0.021 & -0.000 \\
+\midrule
+humaneval & pythia-410m@fp32 & 0.012 & 0.012 & 0.000 \\
+\midrule
+mmlu & pythia-410m@fp32 & 0.265 & 0.264 & 0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,49 @@
+\begin{table}[t]
+\centering
+\caption{Likelihood memorisation signals: OLS coefficient of contamination (HC3 95\% CI), controlling for length and the reference model's score. Rows without a coefficient could not be fitted (contaminated stratum empty or too few rows). Accuracy, raw$-$perturbed sensitivity and the accuracy regression: pythia-410m@fp32 only; pythia-1b@fp32, OLMo-1B-0724-hf@fp32: likelihood scores only. }
+\label{tab:loglik}
+\begin{tabular}{lllrrrrrrr}
+\toprule
+Benchmark & Model & Score & $n$ & $\Delta$ log-prob & CI low & CI high & $p$ & $p$ Holm & $p$ BH \\
+\midrule
+gsm8k & pythia-1b@fp32 & ll\_question & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & pythia-1b@fp32 & ll\_question\_answer & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & pythia-1b@fp32 & mink\_question & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & pythia-1b@fp32 & mink\_question\_answer & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & pythia-410m@fp32 & ll\_question & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & pythia-410m@fp32 & ll\_question\_answer & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & pythia-410m@fp32 & mink\_question & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & pythia-410m@fp32 & mink\_question\_answer & 1000 & -- & -- & -- & -- & -- & -- \\
+gsm8k & OLMo-1B-0724-hf@fp32 & ll\_question & 1000 & 0.024 & -0.057 & 0.106 & 0.561 & 1.000 & 0.862 \\
+gsm8k & OLMo-1B-0724-hf@fp32 & ll\_question\_answer & 1000 & 0.004 & -0.056 & 0.064 & 0.889 & 1.000 & 0.936 \\
+gsm8k & OLMo-1B-0724-hf@fp32 & mink\_question & 1000 & 0.006 & -0.177 & 0.189 & 0.949 & 1.000 & 0.949 \\
+gsm8k & OLMo-1B-0724-hf@fp32 & mink\_question\_answer & 1000 & -0.019 & -0.172 & 0.134 & 0.810 & 1.000 & 0.900 \\
+\midrule
+humaneval & pythia-1b@fp32 & ll\_question & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & pythia-1b@fp32 & ll\_question\_answer & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & pythia-1b@fp32 & mink\_question & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & pythia-1b@fp32 & mink\_question\_answer & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & pythia-410m@fp32 & ll\_question & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & pythia-410m@fp32 & ll\_question\_answer & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & pythia-410m@fp32 & mink\_question & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & pythia-410m@fp32 & mink\_question\_answer & 164 & -- & -- & -- & -- & -- & -- \\
+humaneval & OLMo-1B-0724-hf@fp32 & ll\_question & 164 & 0.047 & -0.069 & 0.163 & 0.430 & 1.000 & 0.798 \\
+humaneval & OLMo-1B-0724-hf@fp32 & ll\_question\_answer & 164 & 0.046 & -0.050 & 0.142 & 0.351 & 1.000 & 0.798 \\
+humaneval & OLMo-1B-0724-hf@fp32 & mink\_question & 164 & 0.116 & -0.178 & 0.410 & 0.439 & 1.000 & 0.798 \\
+humaneval & OLMo-1B-0724-hf@fp32 & mink\_question\_answer & 164 & 0.138 & -0.130 & 0.407 & 0.312 & 1.000 & 0.798 \\
+\midrule
+mmlu & pythia-1b@fp32 & ll\_question & 835 & 0.057 & -0.023 & 0.136 & 0.162 & 1.000 & 0.798 \\
+mmlu & pythia-1b@fp32 & ll\_question\_answer & 835 & 0.044 & -0.029 & 0.117 & 0.238 & 1.000 & 0.798 \\
+mmlu & pythia-1b@fp32 & mink\_question & 835 & 0.106 & -0.035 & 0.248 & 0.141 & 1.000 & 0.798 \\
+mmlu & pythia-1b@fp32 & mink\_question\_answer & 835 & 0.049 & -0.088 & 0.185 & 0.485 & 1.000 & 0.808 \\
+mmlu & pythia-410m@fp32 & ll\_question & 835 & 0.017 & -0.070 & 0.103 & 0.709 & 1.000 & 0.886 \\
+mmlu & pythia-410m@fp32 & ll\_question\_answer & 835 & 0.021 & -0.059 & 0.101 & 0.610 & 1.000 & 0.872 \\
+mmlu & pythia-410m@fp32 & mink\_question & 835 & 0.076 & -0.077 & 0.230 & 0.331 & 1.000 & 0.798 \\
+mmlu & pythia-410m@fp32 & mink\_question\_answer & 835 & 0.020 & -0.131 & 0.170 & 0.798 & 1.000 & 0.900 \\
+mmlu & OLMo-1B-0724-hf@fp32 & ll\_question & 835 & 0.056 & 0.004 & 0.107 & 0.033 & 0.635 & 0.334 \\
+mmlu & OLMo-1B-0724-hf@fp32 & ll\_question\_answer & 835 & 0.073 & 0.022 & 0.123 & 0.005 & 0.093 & 0.093 \\
+mmlu & OLMo-1B-0724-hf@fp32 & mink\_question & 835 & 0.023 & -0.091 & 0.137 & 0.692 & 1.000 & 0.886 \\
+mmlu & OLMo-1B-0724-hf@fp32 & mink\_question\_answer & 835 & 0.046 & -0.061 & 0.154 & 0.398 & 1.000 & 0.798 \\
+\bottomrule
+\end{tabular}
+\end{table}

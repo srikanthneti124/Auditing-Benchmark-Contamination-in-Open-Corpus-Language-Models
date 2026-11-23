@@ -1,0 +1,10 @@
+{
+  "EleutherAI/pythia-410m": {"corpus": "pile", "role": "primary", "dtype": "float32", "download_gb": 0.91,
+                             "max_new_tokens_gsm8k": 256, "batch_size": 8, "fits_8gb": true,
+                             "measured": "2026-10-29 --limit 5 fp32 cuda: peak 2237 MiB (itemloglik bs 8), 1730 MiB gsm8k generation; see _work/smoke/gpu_measure/gpu_memory_log.csv"},
+  "EleutherAI/pythia-1b": {"corpus": "pile", "role": "primary", "dtype": "float32", "download_gb": 2.09},
+  "EleutherAI/pythia-1.4b": {"corpus": "pile", "role": "primary", "dtype": "float32", "download_gb": 2.93},
+  "EleutherAI/pythia-2.8b": {"corpus": "pile", "role": "sensitivity", "dtype": "float16", "download_gb": 5.68},
+  "allenai/OLMo-1B-0724-hf": {"corpus": "dolma", "role": "primary", "dtype": "float32", "download_gb": 5.12},
+  "Qwen/Qwen2.5-1.5B": {"corpus": null, "role": "reference", "dtype": "float32", "download_gb": 3.09}
+}

@@ -1,0 +1,10 @@
+model,benchmark,stratum,n,acc,ci_lo,ci_hi,primary_outcome
+EleutherAI/pythia-410m@fp32,gsm8k,clean,999,0.021021021021021023,0.013013013013013013,0.03003003003003003,likelihood
+EleutherAI/pythia-410m@fp32,gsm8k,partial,1,0.0,,,likelihood
+EleutherAI/pythia-410m@fp32,gsm8k,all,1000,0.021,0.013,0.03,likelihood
+EleutherAI/pythia-410m@fp32,humaneval,clean,164,0.012195121951219513,0.0,0.03048780487804878,likelihood
+EleutherAI/pythia-410m@fp32,humaneval,all,164,0.012195121951219513,0.0,0.03048780487804878,likelihood
+EleutherAI/pythia-410m@fp32,mmlu,clean,693,0.26406926406926406,0.23088023088023088,0.2987012987012987,likelihood
+EleutherAI/pythia-410m@fp32,mmlu,contaminated,111,0.27927927927927926,0.1981981981981982,0.36058558558558534,likelihood
+EleutherAI/pythia-410m@fp32,mmlu,partial,31,0.22580645161290322,0.0967741935483871,0.3870967741935484,likelihood
+EleutherAI/pythia-410m@fp32,mmlu,all,835,0.26467065868263473,0.23233532934131737,0.2946107784431138,likelihood

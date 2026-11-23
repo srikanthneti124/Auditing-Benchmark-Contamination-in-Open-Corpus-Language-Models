@@ -1,0 +1,16 @@
+# Exact versions used (pip freeze, 2026-10-29): requirements.lock.txt
+# torch: install the CUDA build for an RTX 50xx GPU (driver CUDA >= 13.0), e.g.
+#   pip install "torch==2.14.1+cu130" --index-url https://download.pytorch.org/whl/cu130
+torch
+transformers>=5.0
+datasets
+accelerate
+pandas
+numpy
+scipy
+statsmodels
+requests
+tqdm
+matplotlib
+pytest
+truststore  # optional: lets requests use the Windows certificate store

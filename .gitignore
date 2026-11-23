@@ -1,0 +1,25 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+.pytest_cache/
+
+# Backups
+*.bak
+*.bak*
+*.bak2
+*.bak_*
+
+# Working and temporary audit/smoke directories
+_work/
+_audit_tmp/
+python
+
+# Local run logs
+*.log
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

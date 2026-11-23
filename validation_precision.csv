@@ -1,0 +1,13 @@
+subset,stratum,judged,yes,no,unsure_excluded,precision,wilson_lo,wilson_hi,dropped_before_annotation
+all,partial,0,0,0,0,,,,1.0
+all,contaminated,0,0,0,0,,,,2.0
+all,all_flagged,0,0,0,0,,,,3.0
+gsm8k,partial,0,0,0,0,,,,
+gsm8k,contaminated,0,0,0,0,,,,
+gsm8k,all_flagged,0,0,0,0,,,,
+humaneval,partial,0,0,0,0,,,,
+humaneval,contaminated,0,0,0,0,,,,
+humaneval,all_flagged,0,0,0,0,,,,
+mmlu,partial,0,0,0,0,,,,
+mmlu,contaminated,0,0,0,0,,,,
+mmlu,all_flagged,0,0,0,0,,,,

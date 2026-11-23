@@ -1,0 +1,16 @@
+timestamp,script,model,benchmark,device,n_items,n_skipped,seconds,seconds_per_item,peak_allocated_mib,peak_reserved_mib,device_total_mib
+2026-10-29 07:39:16,evaluate.py,EleutherAI/pythia-410m@fp32,gsm8k,cuda,1343,0,5449.29,4.058,1751.3,1806.0,8150.6
+2026-10-29 07:41:56,evaluate.py,EleutherAI/pythia-410m@fp32,mmlu,cuda,1928,0,158.42,0.082,2360.7,3562.0,8150.6
+2026-10-29 08:03:45,evaluate.py,EleutherAI/pythia-410m@fp32,humaneval,cuda,326,0,1307.82,4.012,1757.4,3564.0,8150.6
+2026-10-29 08:04:35,itemloglik.py,EleutherAI/pythia-410m@fp32,gsm8k,cuda,1000,0,26.1,0.026,2979.8,4970.0,8150.6
+2026-10-29 08:04:57,itemloglik.py,EleutherAI/pythia-410m@fp32,mmlu,cuda,1000,0,19.92,0.02,3873.4,5230.0,8150.6
+2026-10-29 08:05:05,itemloglik.py,EleutherAI/pythia-410m@fp32,humaneval,cuda,164,0,7.53,0.046,3591.2,5230.0,8150.6
+2026-11-14 01:56:13,itemloglik.py,EleutherAI/pythia-1b@fp32,gsm8k,cuda,1000,0,59.51,0.06,5433.9,7628.0,8150.6
+2026-11-14 01:57:14,itemloglik.py,EleutherAI/pythia-1b@fp32,mmlu,cuda,1000,0,59.51,0.06,6458.9,10880.0,8150.6
+2026-11-14 01:57:35,itemloglik.py,EleutherAI/pythia-1b@fp32,humaneval,cuda,164,0,19.34,0.118,6120.7,7494.0,8150.6
+2026-11-14 02:24:18,itemloglik.py,allenai/OLMo-1B-0724-hf@fp32,gsm8k,cuda,1000,0,61.16,0.061,6456.3,8642.0,8150.6
+2026-11-14 02:25:30,itemloglik.py,allenai/OLMo-1B-0724-hf@fp32,mmlu,cuda,1000,0,70.38,0.07,7481.2,12996.0,8150.6
+2026-11-14 02:25:55,itemloglik.py,allenai/OLMo-1B-0724-hf@fp32,humaneval,cuda,164,0,23.35,0.142,7143.0,12996.0,8150.6
+2026-11-14 02:50:32,itemloglik.py,Qwen/Qwen2.5-1.5B@fp32,gsm8k,cuda,1000,0,1252.86,1.253,9861.2,11544.0,8150.6
+2026-11-14 03:00:12,itemloglik.py,Qwen/Qwen2.5-1.5B@fp32,mmlu,cuda,1000,0,578.61,0.579,10280.5,11276.0,8150.6
+2026-11-14 03:02:53,itemloglik.py,Qwen/Qwen2.5-1.5B@fp32,humaneval,cuda,164,0,158.92,0.969,8291.2,10766.0,8150.6

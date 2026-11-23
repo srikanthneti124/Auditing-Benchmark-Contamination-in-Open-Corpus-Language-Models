@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Logistic regression of correctness on contamination with controls (Wald 95\% CI; $p$ Holm over converged fits), and Fisher exact test of contaminated vs clean items (conditional OR, exact 95\% CI). Fits that did not converge are not estimable. Controls: length only; the reference model has no accuracy data, so no reference-model control. Accuracy, raw$-$perturbed sensitivity and the accuracy regression: pythia-410m@fp32 only; pythia-1b@fp32, OLMo-1B-0724-hf@fp32: likelihood scores only. }
+\label{tab:regression}
+\begin{tabular}{llrlrrrrrrrrl}
+\toprule
+Benchmark & Model & $n$ & OR & OR low & OR high & $p$ & $p$ Holm & Fisher OR & Fisher low & Fisher high & Fisher $p$ & Not fitted \\
+\midrule
+gsm8k & pythia-410m@fp32 & 1000 & not estimable & -- & -- & -- & -- & -- & -- & -- & -- & one stratum only: no contaminated items (overlap >= thr) \\
+\midrule
+humaneval & pythia-410m@fp32 & 164 & not estimable & -- & -- & -- & -- & -- & -- & -- & -- & one stratum only: no contaminated items (overlap >= thr) \\
+\midrule
+mmlu & pythia-410m@fp32 & 835 & 1.09 & 0.69 & 1.70 & 0.719 & 0.719 & 1.08 & 0.67 & 1.72 & 0.730 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

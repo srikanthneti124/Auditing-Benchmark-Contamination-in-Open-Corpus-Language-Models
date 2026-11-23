@@ -1,0 +1,10 @@
+model,benchmark,acc,ci_lo,ci_hi,chance,near_chance,loglik_available,primary_outcome,loglik_estimable
+EleutherAI/pythia-1b@fp32,gsm8k,,,,0.0,n/a (no accuracy),yes,likelihood only (no accuracy data); contrast not estimable,no
+EleutherAI/pythia-410m@fp32,gsm8k,0.021,0.013,0.03,0.0,yes,yes,likelihood; contamination contrast not estimable,no
+allenai/OLMo-1B-0724-hf@fp32,gsm8k,,,,0.0,n/a (no accuracy),yes,likelihood only (no accuracy data),yes
+EleutherAI/pythia-1b@fp32,humaneval,,,,0.0,n/a (no accuracy),yes,likelihood only (no accuracy data); contrast not estimable,no
+EleutherAI/pythia-410m@fp32,humaneval,0.0121951219512195,0.0,0.0304878048780487,0.0,yes,yes,likelihood; contamination contrast not estimable,no
+allenai/OLMo-1B-0724-hf@fp32,humaneval,,,,0.0,n/a (no accuracy),yes,likelihood only (no accuracy data),yes
+EleutherAI/pythia-1b@fp32,mmlu,,,,0.25,n/a (no accuracy),yes,likelihood only (no accuracy data),yes
+EleutherAI/pythia-410m@fp32,mmlu,0.2646706586826347,0.2323353293413173,0.2946107784431138,0.25,yes,yes,"likelihood (Min-K%, log-lik.)",yes
+allenai/OLMo-1B-0724-hf@fp32,mmlu,,,,0.25,n/a (no accuracy),yes,likelihood only (no accuracy data),yes

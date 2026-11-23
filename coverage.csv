@@ -1,0 +1,4 @@
+benchmark,items_sampled,items_overlap_computed_dolma,items_overlap_computed_pile,items_evaluated,items_perturbable,items_loglik,models_accuracy,models_loglik
+gsm8k,1000,1000,1000,1000,343,1000,1,4
+humaneval,164,164,164,164,162,164,1,4
+mmlu,1000,835,835,1000,928,1000,1,4

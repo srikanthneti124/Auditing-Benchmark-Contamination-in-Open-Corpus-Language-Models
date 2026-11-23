@@ -1,0 +1,4 @@
+model,benchmark,clean,partial,contaminated,flag
+EleutherAI/pythia-410m@fp32,gsm8k,999,1,0,"partial n=1<30, contaminated n=0<30"
+EleutherAI/pythia-410m@fp32,humaneval,164,0,0,"partial n=0<30, contaminated n=0<30"
+EleutherAI/pythia-410m@fp32,mmlu,693,31,111,
